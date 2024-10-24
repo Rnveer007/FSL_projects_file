@@ -1,0 +1,24 @@
+.chess_container{
+    
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.black_box{
+border: 2px solid black;
+height: 150px;
+width: 150px;
+background-color: black;
+
+}
+
+.white_box{
+ 
+    border: 2px solid red;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+}

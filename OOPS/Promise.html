@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // let promisOne = new Promise(function (resolve, reject) {
+        //     // Do an async task
+        //     // DB calls, cryptography , network
+        //     setTimeout(function () {
+        //         console.log("Async task is Complete");
+        //         resolve();
+        //     }, 3000)
+        // });
+
+        // promisOne.then(function(){
+        //     console.log("Promise Consumed");
+        // })
+
+
+        // without assin a varriable for promise funtion
+
+        new Promise(function(resolve, reject){
+            setTimeout(function(){
+            console.log("Async task 2");
+            resolve();
+            },2000)
+        }).then(function(){
+            console.log("async task 2 resolved");
+        })
+
+    </script>
+</body>
+</html>

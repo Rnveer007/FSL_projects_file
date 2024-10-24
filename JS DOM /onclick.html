@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #test{
+            background-color: red;
+            width: 300px;
+            height: 300px;
+        }
+        button{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <button onclick="change()">Click Me</button>    
+
+
+
+
+    <script>
+        function change(){
+            let target=document.getElementById("test")
+            target.style="background:yellow"
+        }
+    </script>
+</body>
+</html>

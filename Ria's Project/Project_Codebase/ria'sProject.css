@@ -1,0 +1,39 @@
+
+.codbase_info{
+ margin-top: 50px;
+}
+
+.codbase_info h1{
+    text-align: center;
+}
+
+.codebase_info_items{
+ display: flex;
+ justify-content: space-around;
+}
+.codbase_info_container
+{
+    width: 30%;
+
+}
+
+.codbase_info_box{
+
+}
+
+.codbase_info_box_logo{
+
+}
+
+.codbase_info_box_logo img{ 
+
+}
+
+
+.codbase_info_box_heading h1{
+
+}
+
+.codbase_info_box p {
+
+}

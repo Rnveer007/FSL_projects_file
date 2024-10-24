@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.main{
+    height: 100vh;
+    background-color:#C7CFD9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1{
+    background-color: #123859;
+    height: 82vh;
+    width: 20%;
+}
+
+/* Always image ki class par height and width should be in pixels. */
+
+.image-1{
+    height: 160px;
+    width: 160px;
+    margin: 1rem auto;
+}
+
+/* Always img tag par height and width should be in percent. */
+
+.image-1 img{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 50%;
+}
+
+.name{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name h1{
+    color: white;
+    font-size: 18px;
+  
+}
+
+.name h3{
+    color:rgb(177 169 169);;
+    font-size: 13px;
+}
+
+.icon{
+    margin-top: 1.5rem;
+    padding-left: 5.5rem;
+}
+
+.icon ul li{
+    color: antiquewhite;
+    cursor: pointer;
+    list-style: none;
+}
+
+.icon ul li i{
+    padding-right: 2.3rem;
+    color: white;
+    height: 20px;
+    width: 20px;
+    padding-bottom: 2rem;
+}
+
+
+
+.container-2{
+    height: 82vh;
+    width: 60%;
+    border: 1px solid black;
+    border: none;
+    background-color: white;
+    padding: 20px;
+}
+
+.container-2 h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerBox{
+    height: 113px;
+    width: 166px;
+    padding: 10px;
+    background-color: #123859;
+    color: white;
+    box-shadow: 9px 9px 11px rgb(170, 168, 168);
+}
+
+.innerItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerItem i{
+    color: #F29F05;
+}
+.innerBox h1{
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.image-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-image{
+    height: 120px;
+    width: 580px;
+    margin-top: 2rem;
+}
+
+.footer-image img{
+height: 100%;
+width: 100%;
+}
+
+.img-3{
+height: 250px;
+width: 150px;
+margin-top: 2rem;
+}
+
+.img-3 img{
+    height: 100%;
+    width: 100%;
+}

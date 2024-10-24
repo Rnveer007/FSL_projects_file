@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #048ABF;
+    height: 100vh;
+}
+
+.box{
+    height: 74vh;
+    width: 24%;
+    background-color: #94E9F2;
+    border-radius: 15px;
+}
+.image{
+    height: 130px;
+    width: 130px;
+    margin: 1.8rem auto;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name{
+    text-align: center;
+}
+
+.name h1{
+    font-size: 26px;
+}
+.name h2{
+    font-size: 14px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.icons i{
+   font-size: 30px;
+}
+
+.fa-facebook{
+    color: #0335a1;
+}
+
+.fa-twitter{
+    color: 	#1DA1F2;
+}
+
+.fa-instagram{
+   color:#E1306C;
+}
+
+.fa-linkedin{
+    color: #0072b1;
+}
+
+
+
+.buttons{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.buttons button{
+    background-color: #078C66;
+    color: white;
+    border: none;
+    padding: 4px 16px;
+    border-radius: 1rem;
+    font-size: 15px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.item i{
+    padding-right: 5px;
+}
+
+.partition{
+    padding-left: 10px;
+}

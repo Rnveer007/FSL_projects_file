@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #fff;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    height: 32px;
+    width: 58%;
+    margin: 22px 31px 36px 65px;
+    
+    
+}
+
+.navlist ul{
+    display: flex;
+    margin-right: 43px;
+}
+
+.navlist ul li{
+    list-style: none;
+    margin-left: 12px;
+    padding: 13px;
+}
+
+.navlist ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.hire{
+    border-radius: 5px;
+    background-color: rgb(144,58,225);
+}
+
+#hiretxt{
+    color: #fff;
+}
+
+
+.look{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241,241,241);
+    padding-bottom: 3rem;
+
+}
+.txt h2{
+    font-size: 54px;
+    margin: 0rem 4rem;
+    color: rgb(43,42,47);
+    
+}
+.txt p{
+color: rgb(43,42,47);
+font-size: 24px;
+margin: 1rem 4rem;
+}
+
+.hirebtn{
+background-color: rgb(78,15,234);
+border: none;
+margin: 0rem 4rem;
+width: 14rem;
+border-radius: 5px;
+height: 3rem;
+}
+
+.hirebtn a{
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+}
+.image{
+    margin: 0rem 5rem;
+}
+
+.image img{
+    height: 500px;
+    width: 495px;
+    margin: 2rem 1rem;
+}
+
+.podcast{
+    background-color: white;
+    height: 48rem;
+}
+.heading{
+    height: 158px;
+    width: 1140px;
+}
+
+.heading h1{
+    color: #2b2a2f;
+    font-weight: 900;
+    text-align: center;
+    margin: 3rem 0rem;
+    padding-left: 12rem;
+    font-size: 3rem;
+}
+
+.imageBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 6.8rem;
+    gap: 2rem;
+}
+    
+
+.imgBox1 img{
+    width: 356px;
+    height: 355px;
+    position: relative;
+}
+.imgBoxtext{
+    background-color: rgb(241,241,241);
+    height: 154px;
+    width:356px;
+    position: relative;
+    top: -5px;
+}
+
+.imgBoxtext h3{
+font-size: 28px;
+text-align: center;
+padding-top: 18px;
+color: rgb(78, 15, 234);
+}
+
+.imgBoxtext p{
+    text-align: center;
+    padding: 1rem;
+    font-size: 16px;
+    color: rgb(43,42,47);
+}
+
+.business{
+    background-color: rgb(241,241,241);
+    height: 40rem;
+}
+
+.businessHeading h1{
+font-size: 45px;
+font-weight: 900;
+text-align: center;
+padding: 4rem 0rem 2rem 0rem;
+}
+
+.businessHeading p{
+    text-align: center;
+    padding: 0rem 17rem 4rem 17rem;
+    line-height: 1.5rem;
+}
+
+.businessImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.businessImg1{
+    height:10rem;
+    width: 16rem;
+}
+.businessImg1 img{
+    height: 100%;
+    width:100%;
+}
+
+.business-detail h3{
+color: #797979;
+font-size: 15px;
+padding: 10px 0px;
+}
+
+.business-detail p{
+    color: #2B2A2F;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+
+
+.business-2{
+    background-color: rgb(255,255,255);
+    height: 40rem;
+}
+.businessHeading-2 h1{
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    padding: 4rem 0rem 2rem 0rem;
+    }
+
+ .businessHeading-2 p{
+    text-align: center;
+    padding: 0rem 17rem 4rem 17rem;
+    line-height: 1.5rem;
+ }   
+
+ .businessImg-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ /* Outer div of img */
+ /* parent element par custom height */
+.businessImg2{
+    height: 10rem;
+    width: 16rem;
+}
+
+/* child element par 100% */
+ .businessImg2 img{
+    height: 100%;
+    width: 100%;
+ }
+
+ .business-detail-2 h3{
+    color: #797979;
+    font-size: 15px;
+    padding: 10px 0px;
+    }
+    
+    .business-detail-2 p{
+        color: #2B2A2F;
+        font-size: 22px;
+        font-weight: bolder;
+    }
+
+    .footer{
+        background-color: rgb(78,15,234);
+        height: 400px;
+    }
+    .footImg{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 90px  161px 0px 161px;
+    
+    }
+    .footImg_Image img{
+        width: 168px;
+        margin-left: -0.9rem;
+    }
+    
+    .footName{
+        display: flex;
+        /*It is used to provide space between elements on which flex is applied.*/
+        gap: 2rem;
+        color: white;
+        margin-bottom: 2rem;
+        font-size: 18px;
+    }
+    
+    hr{
+    margin: -1.5rem 9.68rem;
+    }
+    
+    .footer2{
+        display: flex;
+        justify-content: space-between;
+        margin: 2.5rem 9.6rem;
+    }
+    
+    .icontxt h6{
+        color: #fff;
+        font-size: 1rem;
+        line-height: 35px;
+         ;
+    }
+    
+    .icontext h5{
+        color: #fff;
+        font-size: 16px;
+        margin-top: 2.7rem;
+    }
+    
+    .iconImg{
+    margin-left: 1px;
+    display: flex;
+    gap: 1rem;
+    }
+    
+    .iconImg span{
+    color: #fff ;
+    padding-bottom: 10px;
+    }
+    
+    .iconImg i{
+        font-size: 24px;
+    }

@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header nav.navbar.navbar-expand-lg{
+    box-shadow: 0 4px 5px gray;
+}
+
+a.navbar-brand {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.header ul{
+    margin-right: 15px;
+}
+
+.header ul li.nav-item {
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+
+.header ul li a.nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header nav.navbar.navbar-expand-lg {
+    padding: 25px 0;
+    background-color: #405D72;
+}
+
+.submit a{
+    border: 2px solid antiquewhite;
+    border-radius: 6px;
+    padding: 15px 30px;
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: black;
+    font-weight: 500px;
+    font-size: 18px;
+}
+

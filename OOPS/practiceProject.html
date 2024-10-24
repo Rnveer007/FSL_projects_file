@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <img src="" alt="" id="img">
+        <h1 id="userName"></h1>
+        <h1 id="userEmail"></h1>
+
+        <!-- Button that will trigger the data fetch -->
+        <button id="click">Cick Me</button>
+    </div>
+
+
+
+    <script>
+
+        // Get the DOM elements where data will be displayed
+        let userProfile = document.querySelector("#wrapper img");
+        let uName = document.querySelector("#userName");
+        let uEmail = document.querySelector("#userEmail");
+        let btn_click = document.querySelector("#click");
+
+
+        // API URL to fetch random user data
+        const url = "https://randomuser.me/api";
+
+        
+        
+        // Event listener for the button click event
+        btn_click.addEventListener("click", getData);
+               
+        // Function to fetch data from the API
+        function getData() {
+            fetch(url)
+                .then((response) => {
+                    return response.json(); // Converts the response to JSON
+                })
+                .then((result) => {
+                    // console.log(result);
+                    showData(result.results[0])
+                     // Passes the first user's data to the showData function
+                })
+                .catch((error) => {
+                    console.error(error); // Logs errors in case of failure
+                });
+        }
+
+
+        // Function to display the fetched data in the HTML
+        function showData(fetchData) {
+            // console.log(fetchData)
+            userProfile.src = fetchData.picture.large; // Sets the image source to the user's picture
+            uName.innerHTML = ` ${fetchData.name.first}  ${fetchData.name.last}`;
+            uEmail.innerHTML = ` ${fetchData.email}`
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.box{
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.para {
+    text-align: justify;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid rgb(96, 94, 94);
+}
+
+
+.para button{
+    border: 1px solid gray;
+    color: gray;
+}

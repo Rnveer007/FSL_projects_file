@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operators</title>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+
+    <script>
+      //Pre, Post
+      // Pre increment , Pre decrement
+      // Post increment , Post decrement
+
+      //   let a = 0;
+
+      //   a++;
+      //   ++a;
+      //   --a;
+      //   a--;
+      //   console.log(a);
+
+      //   let a = 0;
+      //   console.log(a++); //1 0 0 0   0
+      //   console.log(--a); //0 -1 0 0  0
+      //   console.log(a--); //-1 -1 -1 0 0
+      //   console.log(++a); //0 0 1 1 0
+
+      //   let a = 11;
+      //   console.log(++a);         //12
+      //   console.log(++a + 1);     //14
+      //   console.log(--a - 1);     //12            11
+      //   console.log(a++ + --a);   //11    12  23  24
+
+      // let a = 100;
+
+      // a++;
+      // a--;
+      // ++a;
+      // --a;
+      // a++;
+
+      // console.log(a);
+
+      // let a = 1; //2
+      // let b = 2; //3
+      // let c = ++a + b++; //5
+      // let d = ++c; //5
+      // let e = a + b + c + d; //15
+
+      // let a = 101;
+      // let b = a++;
+      // let c = a++ + b++;
+      // let d = a + b + c;
+      // let e = --d;
+      // console.log(e);
+
+      //   let a = 5;
+      //   let b = --a + 1; //5
+      //   let c = b--; //4
+      //   let d = a + b + --c; //
+      //   let e = a + b + c + d--; //
+
+      //   console.log(e);
+
+      //   let x = 11;
+      //   let y = ++x;
+      //   let z = ++x + y++;
+      //   console.log(z--);
+
+      //   let a = 0;
+      //   let b = ++a + 1; //
+      //   let c = ++a + ++b;//
+      //   let d = a-- + b-- + c--; //
+      //   let e = a + b + c + --d;//
+      //   console.log(e);//
+
+      //   let a = 0;
+      //   let b = 1;
+
+      //   let x = 1;
+      //   for (let i = 0; i <= 5; i++) {
+      //     x = x++;
+      //     x = x + i;
+      //   }
+      //   console.log(x);
+
+      //   var i = 2;
+      //   for (var i = 0; i < 5; i++) {}
+      //   console.log(i);
+
+      let x = 1;
+      for (let i = 0; i <= 5; i++) {
+        for (let j = 0; j <= 5; j++) {
+          x = x + j;
+        }
+      }
+      console.log(x);
+    </script>
+  </body>
+</html>

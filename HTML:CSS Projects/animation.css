@@ -1,0 +1,82 @@
+.test{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    animation: a  5s   infinite ease-in-out;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+    font-size: 35px;
+    color: aliceblue;
+    font-weight: bold;
+
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes a{
+/* 0%{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(360deg);
+}
+25%{
+    position: absolute;
+    top: 0;
+    left: 1275px;
+    background-color: red;
+}
+50%{
+    background-color: blue;
+    position: absolute;
+    top: 675px;
+    left: 1275px;
+}
+
+75%{
+    background-color: gray;
+    position: absolute;
+    top: 675px;
+    left: 0px
+}
+
+100%{
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+} */
+
+
+0%{
+    position: absolute;
+    top: 0;
+    left:0
+}
+
+25%{
+    position: absolute;
+    top: 750px;
+    left: 350px;
+}
+
+50%{
+    position: absolute;
+    top: 0px;
+    left: 700px;
+}
+
+75%{
+    position: absolute;
+    top: 750px;
+    left: 1050px;
+}
+
+100%{
+    position: absolute;
+    top: 0px;
+    left: 1500px;
+}
+
+}

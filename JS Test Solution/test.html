@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <script>
+        // let x = 1;
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = 1; j <= 5; j++) {
+        //         x++;
+        //     }
+        // }
+        // console.log(x);
+
+
+        // let x = 1;
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = i + 1; j <= 5; j++) {
+        //         x++;
+        //     }
+        // }
+        // console.log(x);
+
+        // loops
+
+        // let x = 1;
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = i + 1; j <= 5; j++) {
+        //         x = x + i;
+        //     }
+        // }
+        // console.log(x);    // need to be proper explaination
+
+        // function, array, hof
+
+        // const arr = [1, 2, 3, 4, 5];
+        // const result = arr.reduce((acc, cur) => acc + cur, 0) - arr.filter(x => x % 2 === 0).length;
+        // console.log(result);
+
+
+        // function, array, string
+        // let str = "JavaScript";
+        // let output = str.split('').reverse().join('').slice(0, -3).toUpperCase();
+        // console.log(output);  
+
+        // function, array, hofxx
+        // const arr = [1, 2, 3, 4, 5];
+        // const result = arr.map(x => x * 2).filter(x => x > 5).reduce((acc, cur) => acc + cur, 0);
+        // console.log(result);
+
+        // function, array, hof
+        // const arr = [1, 2, 3, 4, 5];
+        // const result = arr.slice(1, 4).map(x => x * 2).reduce((acc, cur) => acc + cur, 0);
+        // console.log(result);
+
+        // hoisting, function, scope
+        // console.log(x);
+        // var x = 5;
+        // function innerScope() {
+        //     var x = 10;
+        //     console.log(x);
+        // }
+        // innerScope();
+        // console.log(x);
+
+
+        // hositing, function, 
+        // function foo() {
+        //     console.log(a);
+        //     var a = 1;
+        //     function a() { }
+        //     console.log(a);
+        // }
+        // foo();    
+        
+        
+        
+         // need to be proper explaination
+
+
+
+
+        // hositing, closure, object, loop, function, scope 
+        var print;
+        for (var i = 0; i < 3; i++) {
+            print = function () { console.log(i); };
+        }
+        var myObject = { print: print };
+        myObject.print();
+
+    </script>
+</body>
+
+</html>

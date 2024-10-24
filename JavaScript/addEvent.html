@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .container{
+            width: 400px;
+            height: 300px;
+            margin: 20px;
+        }
+        .container img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #click{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2023/10/13/17/10/mushroom-8313142_1280.jpg" alt="">
+    </div>
+
+    <button id="click"> Click Here </button>
+
+
+
+
+    <script>
+        let target = document.querySelector(".container");
+        let btn_click = document.querySelector("#click");
+        let img = document.querySelector(".container img")
+
+        btn_click.addEventListener("click", function(){
+         target.style.padding = "1rem";
+         target.style.border = "10px solid black"
+         img.src = "https://cdn.pixabay.com/photo/2024/03/28/15/56/chilli-8661184_1280.jpg"
+         
+        })
+
+    </script>
+</body>
+
+</html>

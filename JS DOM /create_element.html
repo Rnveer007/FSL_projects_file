@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="onClick()">click me</button>
+
+
+
+
+
+
+
+    <script>
+    
+        let target =document.querySelector("body")
+
+        function onClick(){
+              let tag = document.createElement("h1")
+              let content = document.createTextNode("My name is Ranveer Singh")
+              tag.append(content)
+              target.append(tag)
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <img src="" alt="">
+    </div>
+
+
+    <script>
+        // This is synchronous programming
+        // let x = 1 ;
+
+        // function fun1(){
+        //     for ( let i =0; i < 10; i++){
+        //       x +=  i;
+        //     }
+        // }
+
+        // function fun2(){
+        //     console.log(x);
+        // }
+
+        // fun1();
+        // fun2();
+
+
+
+        // Call backs
+        // setTimeout(()=> {} ,1000);
+        // interval(()=> {}, 1000);
+
+
+        //  Promise 
+        // promise is an object which is tell you the current state of an asyncronous opration / opration which will compelete in future 
+
+
+        // state can be on of three :- pending , resolve / fulfilled, rejected 
+        
+        // Promise returns : -
+        // the result of the opration if the promise is resolved,
+        // the error if it is rejected
+
+  
+        let img = document.querySelector(".container img")
+        let url = "https://dummyjson.com/product";
+
+        // console.log(fetch(url));
+
+        // let data = fetch(url);
+        // console.log(data);
+        // both mathod in above are same
+
+        // fetch(url).then((respose) => {
+        //    return respose.json(); 
+        // })
+        // .then((result) => {
+        //     console.log(result);
+        //     img.src = result.products[0].thumbnail;
+        // })
+        // .catch((err) =>{
+        //     console.log(err);
+        // })
+
+
+        // Without chaining .then(),catch() in fetch();
+        // await :-
+        // whenever you write await  you have to write async     
+
+        // async function fetchData() {
+        //     let respose = await fetch (url);
+        //     let result =  await  respose.json();
+        //     img.src = result.products[0].thumbnail;            
+        // }   
+        // fetchData();    
+
+
+    </script>
+</body>
+</html>

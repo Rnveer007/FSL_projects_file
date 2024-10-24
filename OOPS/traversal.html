@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversal</title>
+    <link rel="stylesheet" href="traversal.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <ul id="veg_box">
+                <li>Tomato</li>
+                <li>Onion</li>
+                <li>Potato</li>
+            </ul>
+        </div>
+        <div>
+            <ul id="fruits_box">
+                <li>Banana</li>
+                <li>Graps</li>
+                <li>Mango</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+
+        let add = document.getElementById("veg_box").firstElementChild;
+        let newValue = document.getElementById("fruits_box");
+        let replace_item = document.getElementById("fruits_box").children[1];
+
+        let clone = add.cloneNode(true);
+        let newUpdate = newValue.append(clone);
+
+        let update_item = document.createElement("li");
+        update_item.innerHTML = "Apple";
+
+        replace_item.replaceWith(update_item);
+
+        newValue.append(item); 
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        // let Obj1 =  {
+        //  name : "Vikash",
+        //  Age  : 15,
+        //  City : "Jaipur",
+        // }
+
+        // console.log(Obj1.Age)
+
+
+        // let user = {
+        //     name: "Vikash",
+        //     Age: 15,
+        //     City: "Jaipur",
+        //     marks: ((sub1, sub2, sub3) => {
+        //         return sub1 + sub2 + sub3
+        //     }),
+
+        //     newObject :{
+        //         state : "Rajasthan",
+        //         Country : "India",
+        //     },
+
+
+
+        // }
+
+        // // console.log(user.marks(10, 13, 20))
+
+        // console.log(user)
+
+
+
+        // new object ()
+
+        // let person = new Object ();
+        // person.firstName = "Ranveer";
+        // person.lastName = "Singh";
+        // person.homeTown = "Bharatpur";
+
+        // console.log(person.lastName)
+
+
+
+
+        // Q.1 =>
+
+        // let user = {
+        //    name : "Rishi",
+        //    Age : 21,
+        //    state : "Rajasthan",
+
+        //    userSecond : {
+        //     name : "Ranveer",
+        //    Age : 22,
+        //    state : "MP",
+        //    },
+
+        //    userThird : {
+        //     name : "Harendra",
+        //    Age : 26,
+        //    state : "UP",
+        //    },
+
+
+        //    userFourth : {
+        //     name : "shikhar",
+        //    Age : 24,
+        //    state : "Ajmer",
+        //    },
+        // }
+
+        // console.log(user.userSecond.name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //     const names = [
+        //     "Ranveer",
+        //     "Harendra",
+        //     "Sonu",
+        //     "Lucky",
+        //     "Pankaj",
+        //     "Anant",
+        //     "Rishabh",
+        //     "Shikhar",
+        //     "Sunil",
+        //   ];
+
+        //   // [Ranveer, Harendra, Lucky, Pankaj, Anant....]
+
+        //   // [reevnaR, ardneraH......]
+        //   // let newArr = [];
+        //   // for (let i = 0; i < names.length; i++) {
+        //   //   if (names[i].length > 5) {
+        //   //     newArr = names[i];
+        //   //     document.write(newArr);
+        //   //   }
+        //   // }
+
+        //   inside anonymous function this is defined, and points to the caller
+        //   inside arrow function this is not defined
+
+        //   const person = {
+        //     name: "Rohit",
+        //     age: 33,
+        //     profession: "Full Stack Developer",
+        //     isMarried: true,
+        //     skills: ["HTML", "CSS"],
+        //     work: {
+        //       company: "Full Stack Learning",
+        //       designation: "Owner",
+        //     },
+        //     getIntroduction: function () {
+        //       return "My name is " + this.name;
+        //     },
+        //   };
+
+        //   console.log(names);
+
+        //   for(let i=0;i<person.length)
+
+        //   person.forEach((value) => {
+        //     document.write(value);
+        //   });
+
+        //         name:Rohit
+        //   age:33
+        //   profession:Full Stack Developer
+        //   isMarried:true
+        //   work_company:Full Stack Learning
+        //   work_designation:Owner
+
+        //   document.write(person.getIntroduction());
+
+        //   for (let i in person) {
+        //     if (typeof person[i] === "object" && !person[i].length) {
+        //       for (let r in person[i]) {
+        //         document.write(i + "_" + r + ":" + person[i][r] + "<br>");
+        //       }
+        //     } else document.write(i + ":" + person[i] + "<br>");
+        //   }
+
+
+        //   const person = {
+        //     name: "Rohit",
+        //     age: 33,
+        //     profession: "Full Stack Developer",
+        //     isMarried: true,
+        //     skills: ["HTML", "CSS"],
+        //     work: {
+        //       company: "Full Stack Learning",
+        //       designation: "Owner",
+        //     },
+        //     getIntroduction: function () {
+        //       return "My name is " + this.name;
+        //     },
+        //   };
+
+
+        //   // const a = person.name;
+        //   // console.log(a)
+
+        //   const a = person.getIntroduction;
+        //   console.log(a());
+
+        //   //call, bind, apply
+
+
+        // let name = {
+        //     firstName : "Rannveer",
+        //     lastName : "Singh",
+        //     printFulName: function (){
+        //     console.log(this.firstName +  " " + this.lastName)
+        //     }
+        // }
+
+        // name.printFulName();
+
+
+
+        // Call
+
+        // let name2 = {
+        //     firstName : "Rishabh",
+        //     lastName : "Jangir",
+        //     printFulName: function(){
+        //         console.log(this.firstName + " " + this.lastName) 
+        //     }
+        // }
+
+        // name2.printFulName.call(name2);
+
+
+
+
+
+
+
+
+
+        // const person = {
+        //     name: "Harendra",
+        //     address: {
+        //         city: "Bharatpur",
+        //         village: "Barauliran",
+        //     },
+        //     details: {
+        //         job: {
+        //             designation: "Full Stack Developer",
+        //             skills: {
+        //                 frontend: "HTML, CSS",
+        //                 backend: "Node, Express",
+        //             },
+        //         },
+        //     },
+        // };
+
+        // function flattenObjectRecursive(obj, extra  = null) {
+        //     for (let i in obj) {
+        //         if (typeof obj[i] === "object") {
+        //             flattenObjectRecursive(obj[i], i)
+        //         } else {
+        //             if (!extra) document.write(i + " : " + obj[i] + "<br>");
+        //          else  document.write( extra +  " _ " + i + " : " + obj[i] + "<br>")
+        //         }
+        //     }
+        // }
+        // flattenObjectRecursive(person)
+
+
+
+        // Question: flattig an array
+
+        // const numbers = [1, 2, 3, 4, [5, 6], 7, [8, 9, 10], [[11, 12], 13]];
+
+        // const output = []
+
+        // function flatArray(arr) {
+        //     arr.forEach((num) => {
+        //         if (typeof num === "object") {
+        //             flatArray(num)
+        //         }
+        //         else output.push(num)
+        //     })
+        //     return output
+        // }
+
+
+        // document.write(flatArray(numbers))
+
+
+    </script>
+</body>
+
+</html>

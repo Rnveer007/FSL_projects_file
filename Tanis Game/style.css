@@ -1,0 +1,106 @@
+#animate {
+    height: 100vh;
+    background-color: #4F75FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 550px;
+    height: 550px;
+    background-color: #fff;
+    position: relative;
+    transition: all 5s;
+}
+
+.b1 {
+    height: 200px;
+    width: 50px;
+    background-color: #000;
+    animation: slide 4s infinite alternate-reverse ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+@keyframes slide {
+
+    0% {
+        position: absolute;
+        top: 63%;
+        left: 0;
+
+    }
+
+    50% {
+        top: 0;
+    }
+
+    100% {
+        top: 63%;
+        left: 0;
+    }
+}
+
+
+.b2 {
+    height: 200px;
+    width: 50px;
+    background-color: #000;
+    animation: slide1 4s infinite alternate-reverse ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes slide1 {
+    0% {
+        position: absolute;
+        top: 0;
+    }
+
+    50% {
+        top: 63%;
+    }
+
+    100% {
+        top: 0;
+    }
+
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #000;
+    animation: circle 3s infinite alternate ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+}
+
+
+@keyframes circle {
+    0% {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+    }
+
+    50% {
+        position: absolute;
+        left: 79%;
+        top: 50%;
+    }
+
+    100% {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+    }
+
+}

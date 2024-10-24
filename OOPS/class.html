@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+        class Human {
+            constructor(f, l, a) {
+                this.fname = f;
+                this.lname = l;
+                this.age = a;
+            }
+        }
+
+        let obj1 = new Human("Ranveer", "singh", 22);
+        //  console.log(obj1);
+
+        class WebDevloper extends Human {
+        }
+        let obj2 = new WebDevloper("Shikhar", "khandelwa", 22);
+        console.log(obj2)
+
+    </script>
+</body>
+
+</html>

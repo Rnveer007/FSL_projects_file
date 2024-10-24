@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread & destructuring</title>
+</head>
+<body>
+    <script>
+// Spread operator-> It allows you to easily expand elements of an iterable (like arrays, strings, or objects) into individual elements or properties. It's a powerful and convenient way to copy, merge, or manipulate arrays and objects, among other things.
+
+// const a=[1,2,3,4];
+// const b=[2,4,6];
+// const c=[1,7,8,9];
+
+// const x=[...a, ...c];
+// const d=[...b, ...x];
+
+// document.write(d[0]+d[1]+d[2]+d[3]) // 13  
+// document.write(d[d.length-2]+d[d.length-1]); //  17
+
+
+// const names = ["Lucky", "Harendra"];
+// names.push("Ranveer");
+// names.shift();
+// names.unshift("Lucky", "Pankaj");
+// const x = [...names]; // ["lucky","Pankaj","Harendra","Ranveer"]
+// console.log(x.length); // 4
+// console.log(x[0].length + x[x.length - 2].length); // 13
+
+// const a=[1,3,5,7];
+// a[4]=9;
+// const b=[...a]; // [1,3,5,7,9]
+// console.log(b.length) // 5
+
+
+//    const obj = { name: "Lucky", age: 20 };
+//     const x = { ...obj };
+//     console.log(x.name); // Lucky
+
+//     const obj1 = { name: "Pankaj", age: 26 };
+
+//     const obj2 = { ...obj, ...obj1, salary: 100000 };
+
+
+//     console.log(obj2.name, obj2.age) // Pankaj, 26 because js reads from top to bottom so whichever value comes last will overwrite the previous one. 
+//     console.log(Object.key(obj2)[2]); // salary 
+//     console.log(Object.key(obj2)[2].length) // 2 ['salary',100000]
+
+
+// ------------------------------------------------------------------------------------------------------------------------------
+// Destructuring- It is a syntax feature that allows you to unpack values from arrays or properties from objects into distinct variables.
+
+    // let arr=[1,2,3]
+    // let [a, ,c]=arr
+    // console.log(a,c) // 1, 3 
+
+    // function usestate(initialvalue){
+    //     let x=initialvalue
+    //     return [x,x*x] // return in the form of an array. 
+    //     return {original:x,square:x*x} // return in the form of an object. 
+
+    // }
+    // const a=usestate(4); // [4, 16]
+    // var x= a[0]; // 4
+    // var y=a[1];  // 16
+    // let  [x,y]=usestate(4);
+    // console.log(x,y) // 4, 16
+    // const {original,square}=usestate(4,16);
+    // console.log(original*square); // 64
+
+    // let food = { breakfast: "poha", lunch: "daal", dinner: "eggs" }
+
+    // traditional way
+
+        // const breakfast = food.breakfast;
+        // const lunch = food.lunch;
+        // const dinner = food.dinner;
+
+
+        
+    //  Using destructuring 
+        // const { breakfast, lunch, dinner } = food; 
+
+        // document.write("I love " + breakfast + " for breakfast, " + lunch + " for lunch and " + dinner + " for dinner");
+
+        // document.write("<br>")
+
+        // // TEMPLATE LITERAL
+        // document.write(`I love ${breakfast} for breakfast, ${lunch} for lunch and ${dinner} for dinner`);
+
+// --------------------------------------------------------------------------------------------------------------
+
+// Nested destructuring 
+
+    // const user = { 
+    //   id: 1, 
+    //   profile: { 
+    //     firstName: 'Jane', 
+    //     lastName: 'Doe' 
+    //   } 
+    // };
+
+    // const { profile: { firstName, lastName } } = user;
+    // console.log(firstName, lastName); 
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

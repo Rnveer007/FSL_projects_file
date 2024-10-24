@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String-Method</title>
+</head>
+<body>
+    
+
+<script>
+// length-> shows the number of character including spaces.(count from 1).
+// positions are count from 0. 
+
+// var a="hello world";
+// console.log(a.length)  // 11
+
+
+//----------------------------------------------------------------
+
+// toUpperCase()
+
+// var a='Hello world';
+// console.log(a.toUpperCase()); // HELLO WORLD
+
+//-------------------------------------------------------------------
+
+// toLowerCase()
+
+// var a="WELCOME TO JAVASCRIPT"
+// console.log(a.toLowerCase()); // welcome to javascript
+
+//---------------------------------------------------------------------
+
+// replace() & replaceAll()-> It returns new string for given replace value and does'nt modifies the original string. 
+
+// var a="javascript welcome to the world of javascript"
+
+
+// console.log(a.replace("javascript",'Hello')); // Hello welcome to the world of javascript, it only replaces the first value it encountered which has to be replaced.
+
+// console.log(a.replaceAll("javascript","hello")); // hello welcome to the world of hello, it replaces all the value it encountered which has to be replaced. 
+
+
+//---------------------------------------------------------------------
+// trim(), trimStart(), trimEnd()
+
+// var a="    javascript      "
+//     console.log(a);
+    // console.log(a.trimStart()); // It will remove the space from the start of the string. 
+    // console.log(a.trimEnd());  // It will remove the space from the end of the string. 
+    // console.log(a.trim());    // It will remove the space from both the end of the string. 
+
+
+//---------------------------------------------------------------------
+// Concat
+
+// var a="hello world";
+// console.log(a.concat(" People")); // hello world People
+
+//---------------------------------------------------------------------
+// slice
+
+// var a="hello world how are you";
+
+// console.log(a.slice(3,7)) // lo w, start from third position and end at 6th position (not considering 7th position).
+
+// console.log(a.slice(3)) // lo world how are you, start from third position and till the end of the string. 
+
+// counting starts from -1 from the back side and for the second argument where you stopped for first argument count from -8 to -3 in decreasing order and stop at one less than given value.   
+// console.log(a.slice(-8,-3)); //  are 
+
+
+//----------------------------------------------------------------------------
+
+// substring
+
+// It is similar to slice but it does'nt take negative values. 
+
+// var a="hello world how are you";
+
+// console.log(a.substring(3,7)) // lo w
+
+
+//------------------------------------------------------------------------------
+
+// substr
+
+
+// It is also similar to slice but the difference is that second parameter specifies the length of the extracted part( count from 0).
+
+// let a="hello world! how are you"
+// console.log(a.substr(6,7)) // world!
+
+
+
+//---------------------------------------------------------------------
+
+// charAt()
+
+// var a="hello world"
+// console.log(a.charAt(1)); // e, It returns the character for the provided value. 
+
+// console.log(a[0]); // h, both are similar. 
+
+//---------------------------------------------------------------------
+
+// charCodeAt()
+
+// var a="hello world"
+// console.log(a.charCodeAt(1)); // 101, It returns the ascii code for the provided value. 
+
+//-----------------------------------------------------------------------------------------
+
+// indexOf() and lastIndexOf()
+
+// var a="Hello world welcome to javaScript Hello"
+
+// console.log(a.indexOf('Hello')) // 0, returns the index of the starting letter of the word that has been passed. 
+// console.log(a.indexOf("javaScript")) // 23, becoz counting always starts from 0 to that particular letter. 
+// console.log(a.lastIndexOf('Hello')) // 34
+
+//-------------------------------------------------------------------------------------------
+// includes() 
+
+
+// var a="hello world javascript welcomes you"
+// console.log(a.includes('hello')) // true, returns boolean value based on the value passed. 
+// console.log(a.includes("WORLD")) // false
+
+// ---------------------------------------------------------------------------------------------
+
+// split()-> This method is used to convert string into an array.
+
+// var a="hello world"
+// const myArr=a.split(""); // If the separator is "" , returned array will be an array of single character. 
+// console.log(myArr) // ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+
+// const myArr1=a.split(" "); // if the separator is " ", returned array will be an array of index[0] and so on.
+// console.log(myArr1); // ['hello', 'world']
+
+
+// var dt="2024-08-22"
+// let arr=dt.split("-"); ['2024','08','22'];
+// let finalAns=arr[2]+ "-"+arr[1]+"-"+arr[0];
+// console.log(finalAns) // 22-08-2024
+
+//---------------------------------------------------------------------------------------
+
+// padStart(length,string)-> It pads the string with another string (multiple times) until it reaches a given length in starting only.
+// padEnd(length,string) -> It pads a string from the end. 
+// for padding convert the number to string using toString() function. 
+
+
+// let text="5";
+// let padded=text.padStart(3,"0"); // 005- length 3 
+// padded=text.padStart(4,"1"); // 1115-length 4
+// padded=text.padEnd(4,"0"); // 5000- length 4
+
+</script>
+
+</body>
+</html>

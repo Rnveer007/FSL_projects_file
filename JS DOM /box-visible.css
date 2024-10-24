@@ -1,0 +1,11 @@
+.box{
+    display: flex;
+}
+
+.container{
+        width: 300px;
+        height: 300px;
+        background-color: purple;
+        margin: 10px;
+        display: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn_first">
+     Button First
+    </button>
+    <button id="btn_second">
+       Button Second
+    </button>
+
+
+    <script>
+        let click_first =document.querySelector("#btn_first");
+        let click_second =document.querySelector("#btn_second");
+        let Body = document.body
+
+        arr_first = [ "Ranveer", "Shikhar", "Rishabh","Harendra","lucky" ];
+        arr_second = [ "Sunil", "Dileep", "Pavan","Pankaj" ];
+
+
+        click_first.addEventListener("click", function(){
+            let para_first = document.createElement("p")
+            
+            let lastElement = arr_first.pop();
+            arr_second.push(lastElement);
+            para_first.innerHTML =   arr_second
+            Body.append(para_first)
+            // console.log(arr_second) 
+       
+            
+        })
+        click_second.addEventListener("click", function(){
+            let para_second = document.createElement("p")
+            let anotherLastElement = arr_second.pop();
+            arr_first.push(anotherLastElement);
+            para_second.innerHTML = arr_first
+            Body.append(para_second)
+            // console.log(arr_first)
+ 
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>
