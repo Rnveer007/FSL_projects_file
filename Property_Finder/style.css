@@ -39,8 +39,6 @@
     list-style: none;
 }
 
-.header .navbar_list ul li {}
-
 .header .navbar_list ul li a {
     text-decoration: none;
     padding: 3px 5px;
@@ -64,11 +62,6 @@
 }
 
 /* Header Section End */
-
-
-
-
-
 
 /* Hero Section Start */
 
@@ -617,6 +610,7 @@ hr {
     display: flex;
     justify-content: space-between;
     padding: 13px 20px;
+    margin-top: 4rem;
 }
 
 .main_section_logo {

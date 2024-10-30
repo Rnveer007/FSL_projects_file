@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+        // For , while ,do....while
+
+        // for (init ; condition; incr/decr)
+        // for (i = 1; i <= 10; i++) {
+        //     document.write(i);
+        //     document.write("<br>");
+        // }
+
+        // by using while
+        // let i = 1;
+        // while (i <= 10) {
+        //     document.write(i);
+        //     i++;
+        // }
+
+        //count down
+
+        // let i = 50;
+        // while (i >= 1) {
+        //     document.write(i + "<br>");
+        //     i--
+        // }
+
+        // let i = 10;
+        // while(i < 10){
+        //     document.write(i);   // the output will be nothing because the condition is false
+        //     i--
+        // }
+        // while is an ENTRY controlled Loop
+        // Do...while is an EXIT controlled Loop. it will get excuted atleast once if condition is false
+
+
+        // do...while
+        // let i = 10;
+        // do{
+        //     document.write(i);
+        //     i--;
+        // }
+        // while(i > 10);
+
+
+        // break, continue
+        // && , ||
+
+        // for(let i =1; i <= 100; i++){
+        //     if( i === 50){
+        //         break;
+        //     }
+        //     document.write(i + "<br>");
+        // }
+
+
+        // for(let i =1; i <= 100; i++){
+        //     if( i === 51){
+        //         continue;
+        //     }
+        //     document.write(i + "<br>"); //output will 1 to 100 but the 51 no. will be skiped beacuse of continue. that perticular step will be skiped beacuse of condition and continue
+        // }
+
+
+        // && , ||
+
+        // omit 400 - 500
+        // for (let i = 1; i <= 1000; i++){
+        //     if( i >= 400 && i <=500){
+        //         continue;
+        //     }
+        //     document.write(i + "<br>")
+        // }
+
+        // omit 400 - 500 and 800 - 900
+        for (let i = 1; i <= 1000; i++) {
+            if ((i >= 400 && i <= 500 || (i >= 800 && i <= 900))) {
+                continue;
+            }
+            document.write(i + "<br>")
+        }
+
+    </script>
+
+</body>
+
+</html>
