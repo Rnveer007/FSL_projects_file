@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="accordion">
+            <div class="accord">
+                <h1>Heading 1<i class="fa-solid fa-square-minus"></i></h1>
+                <p class="active">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil eos
+                    sapiente voluptas saepe. Temporibus esse totam hic quam, facere,
+                    perspiciatis dignissimos quae ducimus quis, quo eum. Ipsam sint eos
+                    laborum.
+                </p>
+            </div>
+            <div class="accord">
+                <h1>Heading 2<i class="fa-solid fa-square-plus"></i></h1>
+                <p>
+                    Autem ex eos impedit architecto amet harum omnis molestias
+                    repudiandae voluptate cum ullam, voluptatibus esse atque assumenda
+                    doloremque veritatis voluptatum quis enim, adipisci consequuntur,
+                    vero vel commodi. Sequi, atque sed?
+                </p>
+            </div>
+            <div class="accord">
+                <h1>Heading 3<i class="fa-solid fa-square-plus"></i></h1>
+                <p>
+                    Recusandae cupiditate officia necessitatibus cumque molestiae ad
+                    accusamus, laudantium amet perferendis. Error eos aliquid dolor?
+                    Voluptatum molestiae et id odit expedita similique. Ducimus aliquam,
+                    distinctio eveniet pariatur porro eligendi tenetur?
+                </p>
+            </div>
+            <div class="accord">
+                <h1>Heading 4<i class="fa-solid fa-square-plus"></i></h1>
+                <p>
+                    Libero architecto, nesciunt alias consequatur mollitia vitae quasi
+                    omnis vel eligendi, reprehenderit maxime ab veniam, quam minus nulla
+                    molestias rem. Fuga at ab ad perferendis adipisci nihil recusandae
+                    quo ratione?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let icons = document.querySelectorAll(".accord h1 i");
+
+        icons.forEach((icon) => {
+            icon.addEventListener("click", toggleContent);
+        });
+
+        function toggleContent(e) {
+            let para = e.target.parentElement.nextElementSibling;
+
+            if (para.classList.contains("active")) {
+                para.classList.remove("active");
+                e.target.classList.remove("fa-square-minus");
+                e.target.classList.add("fa-square-plus");
+            } else {
+                para.classList.add("active");
+                e.target.classList.remove("fa-square-plus");
+                e.target.classList.add("fa-square-minus");
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

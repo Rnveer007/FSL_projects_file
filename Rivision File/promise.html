@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <div id="wrapper"></div>
+
+
+
+
+    <script>
+        //   promise .then(), catch()
+        // The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+        // A Promise is in one of these states:
+
+        // pending: initial state, neither fulfilled nor rejected.
+        //     fulfilled: meaning that the operation was completed successfully.
+        //         rejected: meaning that the operation failed.
+
+        let pro = new Promise((resolve, reject) => {
+            console.log("promis has been resolved");
+            setTimeout(() => {
+                resolve("5000")
+                console.log(pro)
+            }, 2000)
+        })
+        pro.then((p) => {
+            console.log("p");
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

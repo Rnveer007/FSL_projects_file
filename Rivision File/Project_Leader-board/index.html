@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1> Leader Board</h1>
+
+            <form action="#">
+                <input type="text" placeholder="First Name" id="firstName" autofocus>
+                <input type="text" placeholder="Last Name" id="lastName">
+                <select name="dropdown" id="countries">
+                    <option value="Select Country">Select Country</option>
+                    <option value="India">India</option>
+                    <option value="Pakisthan">Pakistan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Afganistan">Afganistan</option>
+                    <option value="Australia">Australia</option>
+                    <option value="West Indies">West Indies</option>
+                </select>
+                <input type="number" placeholder="Player Score" id="score">
+            </form>
+
+            <button>Add Player</button>
+
+            <hr>
+
+                <div id="table">
+                    <table id="show_result">
+                        <tbody></tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script>
+        let my_name = document.querySelector("#firstName")
+        let my_lastName = document.querySelector("#lastName")
+        let origin = document.querySelector("#countries")
+        let my_score = document.querySelector("#score")
+        let add_here = document.querySelector(".box button")
+        let resultBox = document.querySelector("#show_result tbody")
+        let td = document.querySelector("td")
+        let playerID = 1;
+
+
+        add_here.addEventListener("click", function () {
+
+            let player = {
+                id: playerID++,
+                firstName: my_name.value,
+                lastName: my_lastName.value,
+                Country: origin.value,
+                score: Number(my_score.value)
+            }
+
+
+
+            addPlayerToTable(player);
+            clear_input();
+            sorting()
+        })
+
+        function addPlayerToTable(player) {
+            const tr = document.createElement("tr");
+
+
+            // const tdId = document.createElement("td");
+            // tdId.innerHTML = player.id;
+            // tr.append(tdId);
+
+            const tdFirstName = document.createElement("td");
+            tdFirstName.innerHTML = player.firstName;
+            tdFirstName.style.textTransform = "capitalize"
+            tr.append(tdFirstName);
+
+            const tdLastName = document.createElement("td");
+            tdLastName.innerHTML = player.lastName;
+            tdLastName.style.textTransform = "capitalize"
+            tr.append(tdLastName);
+
+            const tdCountry = document.createElement("td");
+            tdCountry.innerHTML = player.Country;
+            tr.append(tdCountry);
+
+            const tdScore = document.createElement("td");
+            tdScore.className = "score";
+            tdScore.innerHTML = player.score;
+            tr.append(tdScore);
+
+
+            const btnDelete = document.createElement("button");
+            btnDelete.innerHTML = "Delete";
+            btnDelete.style.background = "red";
+            btnDelete.addEventListener("click", function () {
+                resultBox.removeChild(tr);
+                sorting();
+            });
+            tr.appendChild(btnDelete);
+
+            const btnIncrease = document.createElement("button");
+            btnIncrease.innerHTML = "+5";
+            btnIncrease.addEventListener("click", function () {
+                tdScore.innerHTML = Number(tdScore.innerHTML) + 5;
+                sorting();
+
+
+            });
+            tr.appendChild(btnIncrease);
+
+            const btnDecrease = document.createElement("button");
+            btnDecrease.innerHTML = "-5";
+            btnDecrease.addEventListener("click", function () {
+                tdScore.innerHTML = Number(tdScore.innerHTML) - 5;
+                sorting();
+            });
+            tr.appendChild(btnDecrease);
+
+
+            resultBox.appendChild(tr);
+        }
+
+
+        function sorting() {
+            const rows = Array.from(resultBox.querySelectorAll('tr'));
+            rows.sort((a, b) => {
+                const scoreA = Number(a.querySelector(".score").innerHTML);
+                const scoreB = Number(b.querySelector(".score").innerHTML);
+                return scoreB - scoreA; // Sort players by score in descending order
+            });
+
+            rows.forEach(row => resultBox.appendChild(row)); // Re-append sorted rows
+        }
+
+
+
+        function clear_input() {
+            my_name.value = "";
+            my_lastName.value = "";
+            origin.value = "Select Country";
+            my_score.value = "";
+        }
+
+
+    </script> -->
+</body>
+
+</html>

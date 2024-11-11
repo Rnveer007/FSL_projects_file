@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div id="wrapper"></div>
 
@@ -17,6 +19,12 @@
 
         // Objects can be created using object literals or constructors.
         // (Object एक ऐसा data structure होता है जो key-value pairs में information को store करता है।)
+
+
+        // Singalton Objects 
+        // let user = new Object();
+        // // none Singalton Object
+        // let newUser = {}
 
 
 
@@ -41,7 +49,7 @@
 
 
         // Q:- 2
-         
+
         // let person = {
         //     name : "Ranveer",
         //     age  : 22,
@@ -93,16 +101,35 @@
 
         // Object Constructor Function :-
 
-        function car ( make, model){
-            this.make = "TATA";
-            this.model = "2001";
-        }
+        // function car(make, model) {
+        //     this.make = "TATA";
+        //     this.model = "2001";
+        // }
 
-        // Create a new object
-      let myCar = new car("Toyota" ,"Camry");
-      console.log(myCar.model + " is car's model ");
+        // // Create a new object
+        // let myCar = new car("Toyota", "Camry");
+        // console.log(myCar.model + " is car's model ");
+
+
+        // Using symbols
+
+        // first we need to declare a symbol for use 
+
+        // const mySym = Symbol('key1');
+
+        // const user = {
+        //     name: "Ranveer",
+        //     [mySym]: " mykey1",  // here symbol acting like a key. and for refer a symbol we need to use [](square notation)
+        //     Age: 22,
+        //     City: "Bharatpur",
+        //     email: "ranveer@google.com",
+        // }
+
+        // console.log(user[mySym]); //output will be mykey1
+        
 
 
     </script>
 </body>
+
 </html>

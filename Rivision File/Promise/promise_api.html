@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise api</title>
+</head>
+<body>
+    <h1>Promise Api</h1>
+</body>
+</html>
+<script>
+    // Promise API
+    // There are some static methods in the Promise class.
+    
+    // methods of promise
+
+    // 1>Promise.all
+    // ->it will returm a new promise then new promise resolve when all listed promise are resolved and it will give result in form of array. 
+    
+
+    var p1=new Promise((resolve,reject)=>
+    {
+        setTimeout(() => {
+            resolve("first value")
+        }, 1000);
+    })
+
+    var p2=new Promise((resolve,reject)=>
+    {
+        setTimeout(() => {
+            resolve("second value")
+        }, 2000);
+    })
+    var p3=new Promise((resolve,reject)=>
+    {
+        setTimeout(() => {
+            reject('error');
+        },4000);
+    })
+    // p1.then((value)=>
+    // {
+    //     console.log(value);
+    // })
+    // p2.then((value)=>
+    // {
+    //     console.log(value);
+    // })
+    // p3.then((value)=>
+    // {
+    //     console.log(value);
+    // })
+    // ---------------
+//   var pro_all=Promise.allSettled([p1,p2,p3]);
+
+//    pro_all.then((value)=>
+//    {
+//         console.log(value);
+//    })  
+//   ->In promise all method if one promise is rejected then other promise will  not work and it will show an error. 
+// ----------------------------
+// 2>All settled
+// ->Promise allSettled
+// ->In promise allSettled if one promise is reject then it will not shown an error the other promise will work as usually.
+// var pro_all=Promise.allSettled([p1,p2,p3]);
+
+// pro_all.then((value)=>
+// {
+//      console.log(value);
+// }) 
+// Promise.race
+// Promise any
+</script>

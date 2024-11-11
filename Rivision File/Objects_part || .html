@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // ************  Objects ***************
+
+        // An object is a collection of related data and/or functionality. These usually consist of several variables and functions (which are called properties and methods when they are inside objects).
+
+
+        // Object Create 
+        // Object Literals
+
+        // const user = {
+        //     name: "Ranveer",
+        //     Age: 22,
+        //     City: "Bharatpur",
+        //     email: "ranveer@google.com",
+        // }
+
+        // Access Object by using .(dot) notation
+        // console.log(user.name); //output will be Ranveer
+
+        // Access Object by using [](square) notation
+        // console.log(user["name"]); //outoput will be Ranveer
+
+        // Using symbol
+
+        // // first we need to declare a symbol for use 
+
+        // const mySym = Symbol('key1');
+
+        // const user = {
+        //     name: "Ranveer",
+        //     [mySym] : " mykey1",  // here symbol acting like a key.
+        //     Age: 22,
+        //     City: "Bharatpur",
+        //     email: "ranveer@google.com",
+        // }
+
+        // console.log(user[mySym]); //output will be mykey1
+
+
+        // **************** Object Destructuring ******************
+
+        let course = {
+            courseName : "JavaScript",
+            price : "999",
+            courseInstructor : "Hitesh"
+        }
+
+        // .(dot) notation
+        course.courseInstructor
+
+        // using another mathod of syntax for Destructuring
+
+        // let {courseInstructor} = course;
+
+        // console.log(courseInstructor);
+
+        // or
+
+        let { courseInstructor : instructor} = course
+        console.log(instructor);
+
+    </script>
+</body>
+
+</html>

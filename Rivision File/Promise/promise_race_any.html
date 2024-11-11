@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise race & promise any</title>
+</head>
+<body>
+    <h1>Promise race and promise any</h1>
+</body>
+</html>
+
+<script>
+
+    // ->Promise race it will give us the promise which gets firstly whether they are fullfill or reject.
+
+    let pro=new Promise((resolve,reject)=>
+{
+    setTimeout(()=>
+{
+    resolve("first resolve");
+},1000)
+})
+   
+let pro2=new Promise((resolve,reject)=>
+{
+    setTimeout(()=>
+{
+    resolve("resolve promise2");
+},1000)
+})
+   
+let pro3=new Promise((resolve,reject)=>
+{
+    setTimeout(()=>
+{
+    reject("resolve rejected");
+},500)
+})
+   
+    var total=[pro,pro2,pro3];
+
+    // Promise.race(total).then((value) => 
+    
+    // console.log(value)
+    // );
+
+
+    //   Promise.any(total).then((value) => 
+    
+    // console.log(value)
+    // );
+
+// --------------------------------------------------------
+    // Promise any
+
+    // var pro=new Promise((resolve,reject)=>
+    // {
+    //     setTimeout(()=>
+    //     {
+    //         reject("promise one is reject");
+    //     },1000)
+    // })
+
+    // var pro2=new Promise((resolve,reject)=>
+    // {
+    //     setTimeout(()=>
+    //     {
+    //         reject('error');
+    //     },3000)
+    // })
+    // var pro3=new Promise((resolve,reject)=>
+    // {
+    //     setTimeout(()=>
+    //     {
+    //         reject("promise third resolve");
+    //     },2000)
+    // })
+    // let total=[pro,pro2,pro3];
+
+    // Promise.any(total).then((value) => 
+    
+    // console.log(value)
+    // );
+
+    // ->promise any will return a single value. 
+    // ->promise any will only give us the resolve promise.
+
+    // ->if all promise will reject then it will return the output all promise is
+    // rejected.
+
+
+    
+</script>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple handler</title>
+</head>
+<body>
+    <h1>Multiple handlers</h1>
+</body>
+</html> 
+ 
+<script>
+    // ->we can add multiple handler to one program
+    // ->all process will work independenlly.
+
+    let pro=new Promise((resolve,reject)=>
+{
+    console.log('pending state');
+
+    setTimeout(()=>
+{
+    resolve(5000);
+},2000)
+})
+
+pro.then((a)=>
+{
+    console.log(a)
+})
+pro.then(()=>
+{
+    console.log("this is the newest value pf promise resolve");
+})
+pro.then(()=>
+{
+    console.log("this is the new value pf promise resolve");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // var p1=new Promise((resolve,reject)=>
+    // {
+    //     console.log('promise is in pending state');
+    //     setTimeout(() => {  
+    //             resolve(1);
+    //     },3000);
+    // })
+    // p1.then((value)=>
+    // {
+    //     console.log(value);
+    // })
+    // p1.then(()=>
+    // {
+    //     console.log("Hello this another handler");
+    // })
+    // p1.then(()=>
+    // {
+    //     console.log("we can add multiple handler");
+    // })
+    // p1.then(()=>
+    // {
+    //     console.log("we can second add multiple handler");
+    // })
+</script>

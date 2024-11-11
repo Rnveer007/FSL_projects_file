@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise then and catch</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        // promise then and catch() methods :- 
+        // ->Promise will give an error when Promise is rejected.
+        // // ->Promise will give an value when promise will fulfill.
+    
+    
+        // -----------------------------------------
+    
+        //     let pro1=new Promise((resolve,reject)=>
+        // {
+        //     console.log("promise is in pending state");
+    
+        //     setTimeout(()=>
+        // {
+        //     resolve(2000);
+    
+        //     console.log(pro1);
+        // },2000)
+        // })
+    
+        // pro1.then((dummy)=>
+        // {
+        //     console.log(dummy)
+        // })
+    
+        // promise reject---------------
+    
+        // let pro2=new Promise((resolve,reject)=>
+        // {
+        //     console.log("promise in pending state");
+    
+        //     setTimeout(()=>
+        // {
+        //     reject("error");
+        //     console.log(pro2)
+        // },3000)
+        // })
+        // pro2.catch(()=>
+        // {
+        //     console.log('error');
+        // })
+    
+    
+        //  ->all promise will execute parallelly if we have many promises. 
+    
+    
+    
+    
+    
+    
+    
+        //Mathod :- Promise All
+        // ex :- 
+    
+        // let pro = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         resolve(2000);
+        //     },1000)
+        // });
+    
+        // let pro1 = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         resolve(11000);
+        //     },2000)
+        // });
+    
+        // let pro2 = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         reject("rejected");
+        //     },3000)
+        // });
+    
+        // const proAll = Promise.all([pro,pro1,pro2]);
+        // proAll.then((value)=>{
+        //     console.log(value);
+        // })
+
+        // const proAll = Promise.allSettled([pro,pro1,pro2]);
+        // proAll.then((value)=>{
+        //     console.log(value);
+        // })
+    
+
+
+        // promise race :-
+
+
+        let pro1 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            resolve("Promise firt resolved")
+            },2000)
+        });
+
+        let pro2 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            resolve("Promise second resolved")
+            },3000)
+        });
+
+        let pro3 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            resolve("Promise third resolved")
+            },4000)
+        });
+
+        
+    
+    
+    </script>
+</body>
+
+</html>
+
