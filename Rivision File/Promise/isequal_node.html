@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is equal Node</title>
+</head>
+<body>
+    <ul id="first"> 
+        <li>Jatin</li>
+        <li>Aman</li>
+        <li>Jay</li>
+        <li>Naman</li>
+    </ul>
+    <ul id="second">
+        <li>Rohit</li>
+        <li>Naman</li>
+        <li>Namit</li>
+    </ul>
+</body>
+</html>
+
+<script>
+    // Isequal Node
+    // ->Is eqaul Node will compare the comman element in two div if element will found then it will return the output true otherwise it will return the output
+    // false.
+
+    let first=document.getElementById('first').lastElementChild
+   
+    let second=document.getElementById('second').children[1]
+
+    let result=first.isEqualNode(second);
+    console.log(result)
+  
+</script>

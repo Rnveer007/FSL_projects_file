@@ -9,38 +9,30 @@
 
 <body>
 
-   <div id="wrapper">
-    <section></section>
-   </div>
+    <div id="wrapper">
+    </div>
 
 
     <script>
-        const section = document.querySelector('section');
+        // json :- 
+        // java Script Object Notation
 
-        let para1 = document.createElement('p');
-        let para2 = document.createElement('p');
-        let motherInfo = 'The mother cats are called ';
-        let kittenInfo;
-        const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
+        let data = `{ "name" : "john", "age" : "30", "city" : "New York" }`
 
-        fetch(requestURL)
-            .then(response => response.text())
-            .then(text => displayCatInfo(text))
+        const obj1 = JSON.parse(data);
+        console.log(obj1);
 
-        function displayCatInfo(catString) {
-            let total = 0;
-            let male = 0;
 
-            // Add your code here
+        let object = {
+            name: "john",
+            age: 30,
+            city: "New York"
+        };
 
-            // Don't edit the code below here!
+        const obj = JSON.stringify(object);
+        console.log(obj)
 
-            para1.textContent = motherInfo;
-            para2.textContent = kittenInfo;
-        }
 
-        section.appendChild(para1);
-        section.appendChild(para2);
 
     </script>
 </body>

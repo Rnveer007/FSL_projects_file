@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travarsal Method</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="list1">
+            <ul>
+                <li>Aman</li>
+                <li>Jay</li>
+                <li>Ranveer</li>
+                <li>Ria</li>
+            </ul>
+        </div>
+        <div class="list2">
+            <ul>
+                <li>Vikash</li>
+                <li>Ranveer</li>
+                <li>Jay</li>
+                <li>Rishabh</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Isequal Node :-
+        // Is Equal node will compare the comman element in two div if element will found then it will return the output true otherwise it will return the output false.
+        let listFirst = document.querySelector(".list1 ul").children[2];
+        let listSecond = document.querySelector(".list2 ul").children[1]; 
+
+        let result = listFirst.isEqualNode(listSecond);
+        console.log(result)
+    </script>
+    
+</body>
+</html>
