@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back Function</title>
+</head>
+<body>
+    <div id="wrapper"></div>
+    
+
+
+    <script>
+        // Call Back Function
+        // In call back function if we have function then we pass another funciton as a argument iss called call back function.
+
+        // in call back function if one function is not execute then we can't execute another funtion.
+        function sumData(num1,num2){
+            console.log(num1 + num2)
+        }
+        let x =10;
+        let y =20;
+        sumData(x,y);
+
+
+
+        function welcome(){
+            console.log("welcome");
+        }
+
+        function hello(callback){
+            console.log("hello");
+            callback();
+        }
+        hello(welcome) // here we will pass the another function as a variable
+    </script>
+</body>
+</html>

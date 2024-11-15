@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch data</title>
+</head>
+
+<body>
+    <div id="userimage"></div>
+    <div id="userName"></div>
+    <div id="userEmail"></div>
+
+
+
+
+    <script>
+
+        let userPic = document.getElementById("userimage");
+        let name = document.getElementById("userName");
+        let email = document.getElementById("userEmail")
+
+        const data = fetch("https://fakestoreapi.com/products")
+            .then(Response => {
+                return Response.json();
+            })
+            .then((result) => {
+                console.log(result);
+                result.forEach(user => {
+                    let img = document.createElement("img");
+                    img.src = user.image;
+                    let userName = document.createElement("h1");
+                    userName.innerHTML = user.id;
+                    let userEmail = document.createElement("h1");
+                    userEmail.innerHTML = user.price
+        
+                    userPic.append(img,userName,userEmail);      
+                });
+
+            })
+
+    </script>
+</body>
+
+</html>
